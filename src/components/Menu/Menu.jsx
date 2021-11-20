@@ -8,7 +8,7 @@ import Fade from 'react-reveal/Fade';
 import { Nav, NavGrid } from './Menu.style';
 
 //Data
-import { icons, logoD, logoL, logol2, nav } from './MenuData';
+import { icons, logol2, nav } from './MenuData';
 
 const Menu = ({ click, theme }) => {
   return (
