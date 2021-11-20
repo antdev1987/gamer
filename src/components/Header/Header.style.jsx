@@ -4,7 +4,9 @@ import back from './img/valor.jpg';
 
 export const HeaderStyled = styled.header`
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${back}) center center / cover;
-  height: 60vh;
+  background-attachment: fixed;
+  border-radius: 10px;
+  height: 72vh;
 `;
 
 export const GridContainer = styled.div`

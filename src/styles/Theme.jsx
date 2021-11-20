@@ -1,6 +1,6 @@
-export const colorLight = { primary: 'red' };
+export const colorLight = { primary: '#F04857' };
 
-export const colorDark = { primary: 'red' };
+export const colorDark = { primary: '#F04857' };
 ///
 export const dark = { color: 'white', bgColor: '#1D252C', colors: colorDark };
 

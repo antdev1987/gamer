@@ -2,7 +2,10 @@ import styled from 'styled-components';
 
 export const Nav = styled.nav`
   font-size: 2rem;
-  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  background: ${props => props.theme.bgColor};
+  z-index: 10;
 `;
 
 export const NavGrid = styled.div`

@@ -1,15 +1,15 @@
 //Animation
-import { Parallax } from 'react-parallax';
 import Zoom from 'react-reveal/Zoom';
 
 import valor from './img/valor.jpg';
+import back from './img/f.jpg';
 
 //Components
 import { Container } from '../../utility/Container/Container.style';
 import { Title } from '../../utility/Title/Title.style';
 
 //Style
-import { Img, VisionStyled } from './Vision.style';
+import { ImgBox, VisionFlex, VisionStyled } from './Vision.style';
 import { services } from './VisionData';
 
 const Vision = () => {
@@ -18,22 +18,26 @@ const Vision = () => {
       <VisionStyled>
         <Title>
           <Zoom left cascade>
-            <h2>Our Vision</h2>
+            <h2 className="title">Our Vision</h2>
           </Zoom>
         </Title>
-        <Parallax
-          renderLayer={(percentage) => (
-            <div className="fix">
-              <Img src={valor} perce={percentage} />
-            </div>
-          )}
-        >
-          {services.map((item, idx) => (
-            <div style={{ height: '100%' }}>
-              <h1 key={idx}>{item.title}</h1>
-            </div>
-          ))}
-        </Parallax>
+        <VisionFlex src={back}>
+          <ImgBox back={back}>
+            <img src={valor} alt="" />
+          </ImgBox>
+          <div className="flex">
+            {services.map((item, idx) => (
+              <div>
+                <section>
+                  <h2 key={idx}>{item.title}</h2>
+                </section>
+                <p style={{textAlign: `${item.place}`}}>{item.text}</p>
+                {item.icons && item.icons.map((item) => <>{item.icon}</>)}
+                {item.iconTitle}
+              </div>
+            ))}
+          </div>
+        </VisionFlex>
       </VisionStyled>
     </Container>
   );
