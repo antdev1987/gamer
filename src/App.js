@@ -9,6 +9,7 @@ import { dark, light } from './styles/Theme';
 import Menu from './components/Menu/Menu';
 import Header from './components/Header/Header';
 import Vision from './components/Vision/Vision';
+import Faq from './components/Faq/Faq';
 
 function App() {
   const [theme, setTheme] = useState('dark');
@@ -21,7 +22,7 @@ function App() {
       <Menu theme={theme} click={ChangeTheme} />
       <Header />
       <Vision />
-      <div style={{ height: '100vh' }} />
+      <Faq />
       <GlobalStyle />
     </ThemeProvider>
   );
