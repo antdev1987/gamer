@@ -1,15 +1,11 @@
 import styled from 'styled-components';
+import { device } from '../../styles/Responsive';
 
 export const Acordion = styled.main`
   margin-top: 3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 
   section {
     transition: all 1s;
-    border-radius: 10px;
   }
 `;
 
@@ -26,17 +22,20 @@ export const BoxAcordion = styled.div`
 
   .content {
     max-height: 0;
-    transition: all 0.25s cubic-bezier(0, 1, 0, 1);
+    transition: all 0.1s;
     overflow: hidden;
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding: 0rem 2rem;
 
+    @media ${device.mobileL} {
+      font-size: 1.5rem;
+    }
   }
 
   .content.show {
     height: auto;
     max-height: 9999px;
-    transition: all 0.25s cubic-bezier(1, 0, 1, 0);
+    transition: all 0.3s;
     border-bottom: 1px solid ${(props) => props.theme.color};
     padding: 1rem 2rem;
   }

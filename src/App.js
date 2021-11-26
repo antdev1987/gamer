@@ -11,6 +11,7 @@ import Header from './components/Header/Header';
 import Vision from './components/Vision/Vision';
 import Faq from './components/Faq/Faq';
 import { BrowserRouter } from 'react-router-dom';
+import Streaming from './components/Streaming/Streaming';
 
 function App() {
   const [theme, setTheme] = useState('dark');
@@ -25,6 +26,7 @@ function App() {
         <Header />
         <Vision />
         <Faq />
+        <Streaming/>
         <GlobalStyle />
       </BrowserRouter>
     </ThemeProvider>

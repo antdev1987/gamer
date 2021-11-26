@@ -10,13 +10,10 @@ const GlobalStyle = createGlobalStyle`
   }
 
   html {
-    font-size: 25%;
+    font-size: 37.5%;
     font-family: sans-serif;
     scroll-behavior: smooth;
 
-  @media ${device.mobileL}{
-    font-size: 37.5%;
-  }
 
   @media ${device.tablet}{
     font-size: 50%;
