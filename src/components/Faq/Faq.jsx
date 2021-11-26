@@ -19,7 +19,7 @@ const Faq = () => {
   };
   return (
     <Container>
-      <Acordion>
+      <Acordion id="faq">
         <section>
           {data.map((item, i) => (
             <BoxAcordion VoF={VoF}>

@@ -10,7 +10,7 @@ import { subTagline, tagline } from './HeaderData';
 
 const Header = () => {
   return (
-    <HeaderStyled>
+    <HeaderStyled id="home">
       <GridContainer>
         <section>
           <Title>

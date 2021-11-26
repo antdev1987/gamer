@@ -12,7 +12,7 @@ import { back, services } from './VisionData';
 const Vision = () => {
   return (
     <Container>
-      <VisionStyled>
+      <VisionStyled id="vision">
         <Title>
           <Fade top>
             <h2 className="title">Our Vision</h2>

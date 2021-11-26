@@ -9,25 +9,18 @@ import { Nav, NavGrid } from './Menu.style';
 
 //Data
 import { icons, logo, nav } from './MenuData';
+import Slidebar from '../Slidebar/Slidebar';
 
 const Menu = ({ click, theme }) => {
   return (
     <Nav>
       <Container>
         <NavGrid>
-          <Fade left delay={1000}>
+          <Slidebar nav={nav} />
+          <Fade top>
             <img src={logo} alt="" />
           </Fade>
-          <ul>
-            {nav.map(({ text, href }, idx) => (
-              <Fade top delay={`${idx + 2}000`} key={idx}>
-                <li>
-                  <a href={href}>{text}</a>
-                </li>
-              </Fade>
-            ))}
-          </ul>
-          <Fade right delay={6000}>
+          <Fade right>
             <button onClick={() => click()}>
               {theme === 'dark' ? icons.sun : icons.moon}
             </button>

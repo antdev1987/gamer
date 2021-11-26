@@ -14,8 +14,7 @@ export const Nav = styled.nav`
 `;
 
 export const NavGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
   justify-items: center;
   align-items: center;
   gap: 3rem;
@@ -24,29 +23,21 @@ export const NavGrid = styled.div`
     height: 2rem;
   }
 
-  ul {
-    list-style: none;
-    display: flex;
-    gap: 2rem;
+  .nav-menu {
+    background: ${props => props.theme.bgColor};
   }
 
-  a {
-    text-decoration: none;
-    text-transform: capitalize;
-    color: ${(props) => props.theme.color};
-    background: ${(props) => props.theme.bgColor};
-    opacity: 0.6;
-    transition: all 1s ease-in-out;
-    font-weight: 500;
+  .menu-bars svg {
+    color: ${props => props.theme.color};
+  }
 
-    &:hover {
-      opacity: 1;
-    }
+  .nav-text a {
+    color: ${props => props.theme.color};
   }
 
   button {
     justify-self: end;
-    transition: all 1s ease-in-out;
+    transition: background 1s ease-in-out;
     border-radius: 1rem;
     cursor: pointer;
     height: 3rem;

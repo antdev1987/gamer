@@ -8,8 +8,9 @@ export const logo = logoImg;
 
 //Nav Navigation
 export const nav = [
-  { text: 'home', href: '#home',  },
-  { text: 'pricing', href: '#pricing' },
+  { text: 'home', href: '#home' },
+  { text: 'vision', href: '#vision' },
+  { text: 'faq', href: '#faq' },
   { text: 'about', href: '#about' },
   { text: 'contact us', href: '#contactUs' },
 ];

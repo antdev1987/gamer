@@ -10,6 +10,7 @@ import Menu from './components/Menu/Menu';
 import Header from './components/Header/Header';
 import Vision from './components/Vision/Vision';
 import Faq from './components/Faq/Faq';
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
   const [theme, setTheme] = useState('dark');
@@ -19,11 +20,13 @@ function App() {
   };
   return (
     <ThemeProvider theme={theme === 'dark' ? dark : light}>
-      <Menu theme={theme} click={ChangeTheme} />
-      <Header />
-      <Vision />
-      <Faq />
-      <GlobalStyle />
+      <BrowserRouter>
+        <Menu theme={theme} click={ChangeTheme} />
+        <Header />
+        <Vision />
+        <Faq />
+        <GlobalStyle />
+      </BrowserRouter>
     </ThemeProvider>
   );
 }
