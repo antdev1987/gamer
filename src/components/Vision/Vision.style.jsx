@@ -52,7 +52,6 @@ export const ImgBox = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* background: url(${(props) => props.back}) center center / cover; */
   margin: 0 auto;
   height: 100vh;
   margin: 0 auto;
@@ -66,5 +65,7 @@ export const ImgBox = styled.div`
     height: 70%;
     width: 100%;
     object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 1.5rem black;
   }
 `;

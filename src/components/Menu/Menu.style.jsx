@@ -6,6 +6,11 @@ export const Nav = styled.nav`
   top: 0;
   background: ${props => props.theme.bgColor};
   z-index: 10;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  transition: background 1s ease-in-out;
 `;
 
 export const NavGrid = styled.div`
@@ -13,11 +18,10 @@ export const NavGrid = styled.div`
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   align-items: center;
+  gap: 3rem;
 
   img {
-    height: 10rem;
-    width: 15rem;
-    justify-self: start;
+    height: 2rem;
   }
 
   ul {

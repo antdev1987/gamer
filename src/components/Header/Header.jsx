@@ -1,8 +1,7 @@
 //Animation
-import Zoom from 'react-reveal/Zoom';
+import Fade from 'react-reveal/Fade';
 
 //Components
-import { Container } from '../../utility/Container/Container.style';
 import { Title } from '../../utility/Title/Title.style';
 
 //style
@@ -11,22 +10,24 @@ import { subTagline, tagline } from './HeaderData';
 
 const Header = () => {
   return (
-    <Container>
-      <HeaderStyled>
-        <GridContainer>
-          <section>
-            <Title>
-              <Zoom left cascade>
-                <h2>comming soon</h2>
-              </Zoom>
-            </Title>
+    <HeaderStyled>
+      <GridContainer>
+        <section>
+          <Title>
+            <Fade top>
+              <h2>comming soon</h2>
+            </Fade>
+          </Title>
+          <Fade top>
             <h3>{tagline.title}</h3>
+          </Fade>
+          <Fade bottom>
             <h4>{tagline.text}</h4>
             <p>{subTagline}</p>
-          </section>
-        </GridContainer>
-      </HeaderStyled>
-    </Container>
+          </Fade>
+        </section>
+      </GridContainer>
+    </HeaderStyled>
   );
 };
 

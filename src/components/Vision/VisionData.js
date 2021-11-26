@@ -2,6 +2,10 @@ import * as BsIcon from 'react-icons/bs';
 import * as AiIcon from 'react-icons/ai';
 import * as MdIcon from 'react-icons/md';
 
+import controller from "./img/controller.jpg"
+
+export const back = controller
+
 export const services = [
   {
     iconTitle: <MdIcon.MdHighQuality />,

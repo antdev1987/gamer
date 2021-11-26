@@ -2,15 +2,10 @@
 import * as BiIcon from 'react-icons/bi';
 
 //Logos
-import logoDark from './img/Capture.png';
-import logoLight from './img/logo2.png';
-import logoLight2 from './img/logo2 (1).png';
+import logoImg from './img/logo.svg';
 
-export const logoD = logoDark;
+export const logo = logoImg;
 
-export const logoL = logoLight;
-
-export const logol2 = logoLight2;
 //Nav Navigation
 export const nav = [
   { text: 'home', href: '#home',  },

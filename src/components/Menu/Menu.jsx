@@ -8,7 +8,7 @@ import Fade from 'react-reveal/Fade';
 import { Nav, NavGrid } from './Menu.style';
 
 //Data
-import { icons, logol2, nav } from './MenuData';
+import { icons, logo, nav } from './MenuData';
 
 const Menu = ({ click, theme }) => {
   return (
@@ -16,7 +16,7 @@ const Menu = ({ click, theme }) => {
       <Container>
         <NavGrid>
           <Fade left delay={1000}>
-            <img src={logol2} alt="" />
+            <img src={logo} alt="" />
           </Fade>
           <ul>
             {nav.map(({ text, href }, idx) => (

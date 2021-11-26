@@ -1,12 +1,14 @@
 import styled from 'styled-components';
 
-import back from './img/valor.jpg';
+//Data
+import { back } from './HeaderData';
 
 export const HeaderStyled = styled.header`
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${back}) center center / cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(${back}) center center / cover;
   background-attachment: fixed;
   border-radius: 10px;
-  height: 72vh;
+  height: 95vh;
 `;
 
 export const GridContainer = styled.div`
@@ -16,6 +18,9 @@ export const GridContainer = styled.div`
   justify-content: center;
   align-items: center;
   height: 100%;
+  color: ${(props) => props.theme.colors.white};
+  transition: color 1s ease-in-out;
+
   h3 {
     font-size: 5rem;
     margin-top: 3rem;
