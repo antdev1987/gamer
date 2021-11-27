@@ -12,6 +12,8 @@ import Vision from './components/Vision/Vision';
 import Faq from './components/Faq/Faq';
 import { BrowserRouter } from 'react-router-dom';
 import Streaming from './components/Streaming/Streaming';
+import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
 
 function App() {
   const [theme, setTheme] = useState('dark');
@@ -26,7 +28,9 @@ function App() {
         <Header />
         <Vision />
         <Faq />
-        <Streaming/>
+        <Streaming />
+        <Contact />
+        <Footer />
         <GlobalStyle />
       </BrowserRouter>
     </ThemeProvider>

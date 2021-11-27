@@ -28,7 +28,7 @@ const GlobalStyle = createGlobalStyle`
   body{
     color: ${(props) => props.theme.color};
     background: ${(props) => props.theme.bgColor};
-    transition: all 1s ease-in-out;
+    transition: background  1s ease-in-out;
   }
 `;
 

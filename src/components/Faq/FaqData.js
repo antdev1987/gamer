@@ -1,11 +1,11 @@
 export const Data = [
   {
-    question: 'WHAT IS Beamy?',
+    question: 'WHAT IS Cloud Streaming?',
     answer: `We are a small group of experienced developers who want to help and uplift gamers who don't have the physical har
 dware to play and stream any game they want. `,
   },
   {
-    question: 'WHEN WILL AIRPLAY BE AVAILABLE?',
+    question: 'When will our services become available?',
     answer: `WE PLAN TO LAUNCH OUR SERVICE FOLLOWING THE HOLIDAY SEASON NEXT YEAR.  `,
   },
   {

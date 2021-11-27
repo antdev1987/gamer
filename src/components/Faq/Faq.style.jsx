@@ -18,6 +18,7 @@ export const BoxAcordion = styled.div`
     font-size: 1.5rem;
     border-bottom: 1px solid ${(props) => props.theme.color};
     padding: 1rem 2rem;
+    text-transform: uppercase;
   }
 
   .content {

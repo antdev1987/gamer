@@ -21,6 +21,7 @@ export const GridContainer = styled.div`
   color: ${(props) => props.theme.colors.white};
   transition: color 1s ease-in-out;
   line-height: 4rem;
+  padding: 0 2rem;
 
   h3 {
     font-size: 5rem;

@@ -1,4 +1,5 @@
 //Animation
+import { Fragment } from 'react';
 import Fade from 'react-reveal/Fade';
 
 //Components
@@ -24,17 +25,17 @@ const Vision = () => {
           </ImgBox>
           <div className="flex">
             {services.map((item, idx) => (
-              <div>
+              <div key={idx}>
                 <Fade top>
                   <section>
-                    <h2 key={idx}>{item.title}</h2>
+                    <h2>{item.title}</h2>
                   </section>
                 </Fade>
                 <Fade bottom>
                   <p style={{ textAlign: `${item.place}` }}>{item.text}</p>
                 </Fade>
 
-                {item.icons && item.icons.map((item) => <>{item.icon}</>)}
+                {item.icons && item.icons.map((item, idx) => <Fragment key={idx + 1}>{item.icon}</Fragment>)}
                 {item.iconTitle}
               </div>
             ))}

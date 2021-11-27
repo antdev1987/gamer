@@ -1,15 +1,14 @@
-//Style
-import { NeonButon } from './NeonButton.style';
+import { Button } from "./NeonButton.style";
 
 const NeonButton = (props) => {
   return (
-    <NeonButon>
+    <Button type={props.ty}>
       <span></span>
       <span></span>
       <span></span>
       <span></span>
       {props.children}
-    </NeonButon>
+    </Button>
   );
 };
 

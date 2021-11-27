@@ -1,36 +1,45 @@
 import styled from 'styled-components';
 
-export const NeonButon = styled.button`
+export const Button = styled.button`
+  background: none;
+  cursor: pointer;
   position: relative;
   display: inline-block;
-  padding: 15px 30px;
-  color: #2196f3;
+  padding: 1.5rem 3rem;
+  color: ${(props) => props.theme.colors.primary};
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: .4rem;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 2.4rem;
   overflow: hidden;
   transition: 0.2s;
-  border: 0.1px solid #2196f3;
+  border: 0.1px solid ${(props) => props.theme.colors.primary};
 
   &:hover {
-    color: #255784;
-    background: #2196f3;
-    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    color: ${(props) => props.theme.colors.primaryDark};
+    background: ${(props) => props.theme.colors.primary};
+    box-shadow: 0 0 1rem ${(props) => props.theme.colors.primary},
+      0 0 4rem ${(props) => props.theme.colors.primary},
+      0 0 8rem ${(props) => props.theme.colors.primary};
     transition-delay: 1s;
   }
 
-  & span {
+  span {
     position: absolute;
     display: block;
+    margin: 0;
   }
 
-  & span:nth-child(1) {
+  span:nth-child(1) {
     top: 0;
     left: -100%;
     width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, #2196f3);
+    height: .2rem;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      ${(props) => props.theme.colors.primary}
+    );
   }
 
   &:hover span:nth-child(1) {
@@ -38,12 +47,16 @@ export const NeonButon = styled.button`
     transition: 1s;
   }
 
-  & span:nth-child(3) {
+  span:nth-child(3) {
     bottom: 0;
     right: -100%;
     width: 100%;
-    height: 2px;
-    background: linear-gradient(270deg, transparent, #2196f3);
+    height: .2rem;
+    background: linear-gradient(
+      270deg,
+      transparent,
+      ${(props) => props.theme.colors.primary}
+    );
   }
 
   &:hover span:nth-child(3) {
@@ -52,12 +65,16 @@ export const NeonButon = styled.button`
     transition-delay: 0.5s;
   }
 
-  & span:nth-child(2) {
+  span:nth-child(2) {
     top: -100%;
     right: 0;
-    width: 2px;
+    width: .2rem;
     height: 100%;
-    background: linear-gradient(180deg, transparent, #2196f3);
+    background: linear-gradient(
+      180deg,
+      transparent,
+      ${(props) => props.theme.colors.primary}
+    );
   }
 
   &:hover span:nth-child(2) {
@@ -66,12 +83,16 @@ export const NeonButon = styled.button`
     transition-delay: 0.25s;
   }
 
-  & span:nth-child(4) {
+  span:nth-child(4) {
     bottom: -100%;
     left: 0;
-    width: 2px;
+    width: .2rem;
     height: 100%;
-    background: linear-gradient(360deg, transparent, #2196f3);
+    background: linear-gradient(
+      360deg,
+      transparent,
+      ${(props) => props.theme.colors.primary}
+    );
   }
 
   &:hover span:nth-child(4) {

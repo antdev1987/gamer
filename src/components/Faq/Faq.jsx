@@ -30,7 +30,7 @@ const Faq = () => {
         </Title>
         <section>
           {Data.map((item, i) => (
-            <Fade top>
+            <Fade top key={i}>
               <BoxAcordion VoF={VoF}>
                 <div className="title" onClick={() => toggle(i)}>
                   <h2>{item.question}</h2>
