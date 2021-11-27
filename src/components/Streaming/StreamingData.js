@@ -1,7 +1,7 @@
 import * as AiIcon from 'react-icons/ai';
 import * as BsIcon from 'react-icons/bs';
 
-import img from './img/sectionStreaming.jpeg';
+import img from './img/sectionStreaming.jpg';
 
 export const title = 'Streaming';
 
