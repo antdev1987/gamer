@@ -1,3 +1,5 @@
+export const title = "Faq's"
+
 export const Data = [
   {
     question: 'WHAT IS Cloud Streaming?',

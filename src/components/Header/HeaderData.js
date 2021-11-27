@@ -2,6 +2,8 @@ import Hero from "./img/hero.jpg"
 
 export const back = Hero
 
+export const title = "comming soon"
+
 export const tagline = {
   title: 'Beamy -',
   text: 'paving the way for the future of cloud gaming',

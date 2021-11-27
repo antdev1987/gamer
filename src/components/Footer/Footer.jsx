@@ -1,11 +1,12 @@
 //Style
 import { SectionFooter } from './Footer.style';
+import { Data } from './FooterData';
 
 const Footer = () => {
   return (
     <SectionFooter>
       <div>
-        <p>&copy; 2021 Cloud Streaming | In Cloud We Trust</p>
+        <p>&copy; {Data}</p>
       </div>
     </SectionFooter>
   );

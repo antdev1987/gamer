@@ -1,3 +1,5 @@
+import Fade from "react-reveal/Fade"
+
 //Component
 import NeonButton from '../../utility/NeonButton/NeonButton';
 import { Title } from '../../utility/Title/Title.style';
@@ -20,11 +22,13 @@ const Contact = () => {
   return (
     <Section id="contactUs">
       <Title>
-        <h2>{titleSection}</h2>
+        <Fade top>
+          <h2>{titleSection}</h2>
+        </Fade>
         <p>{subtitleSection}</p>
       </Title>
       <form>
-        <div>
+        <div className="flex">
           <input
             type="text"
             name="name"
@@ -45,7 +49,9 @@ const Contact = () => {
           required
         />
         <textarea name="message" placeholder={placeholderMessage} />
-        <NeonButton ty="submit">{textButton}</NeonButton>
+        <Fade bottom>
+          <NeonButton ty="submit">{textButton}</NeonButton>
+        </Fade>
       </form>
     </Section>
   );

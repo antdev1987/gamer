@@ -8,7 +8,7 @@ import { Title } from '../../utility/Title/Title.style';
 
 //style
 import { Acordion, BoxAcordion } from './Faq.style';
-import { Data } from './FaqData';
+import { Data, title } from './FaqData';
 
 const Faq = () => {
   const [VoF, setVoF] = useState(null);
@@ -25,7 +25,7 @@ const Faq = () => {
       <Acordion id="faq">
         <Title>
           <Fade top>
-            <h2>Faq's</h2>
+            <h2>{title}</h2>
           </Fade>
         </Title>
         <section>

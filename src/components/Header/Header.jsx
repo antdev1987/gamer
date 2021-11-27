@@ -6,7 +6,7 @@ import { Title } from '../../utility/Title/Title.style';
 
 //style
 import { GridContainer, HeaderStyled } from './Header.style';
-import { subTagline, tagline } from './HeaderData';
+import { subTagline, tagline, title } from './HeaderData';
 
 const Header = () => {
   return (
@@ -15,7 +15,7 @@ const Header = () => {
         <section>
           <Title>
             <Fade top>
-              <h2>comming soon</h2>
+              <h2>{title}</h2>
             </Fade>
           </Title>
           <Fade top>

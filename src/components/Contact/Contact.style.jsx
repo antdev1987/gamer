@@ -16,16 +16,19 @@ export const Section = styled.section`
   form {
     margin-top: 5rem;
     width: 100%;
-    text-align: center;
     padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     @media ${device.mobileL} {
       width: 70rem;
     }
 
-    div {
+    .flex {
       display: flex;
       flex-wrap: wrap;
+      width: 100%;
       
       @media ${device.mobileL} {
         gap: 2rem;
