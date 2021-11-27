@@ -28,5 +28,4 @@ export const ImageBox = styled.div`
   height: 40rem;
   width: 100%;
   background: url(${(props) => props.srcHtml}) center center / cover;
-  background-attachment: fixed;
 `;

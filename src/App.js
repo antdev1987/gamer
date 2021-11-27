@@ -27,8 +27,8 @@ function App() {
         <Menu theme={theme} click={ChangeTheme} />
         <Header />
         <Vision />
-        <Faq />
         <Streaming />
+        <Faq />
         <Contact />
         <Footer />
         <GlobalStyle />

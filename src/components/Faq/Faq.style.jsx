@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { device } from '../../styles/Responsive';
 
 export const Acordion = styled.main`
-  margin-top: 3rem;
+  margin-top: 5rem;
 
   section {
     transition: all 1s;
