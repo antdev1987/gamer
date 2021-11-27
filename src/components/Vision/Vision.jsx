@@ -8,7 +8,7 @@ import { Title } from '../../utility/Title/Title.style';
 
 //Style
 import { ImgBox, VisionFlex, VisionStyled } from './Vision.style';
-import { back, services } from './VisionData';
+import { back, services, title } from './VisionData';
 
 const Vision = () => {
   return (
@@ -16,7 +16,7 @@ const Vision = () => {
       <VisionStyled id="vision">
         <Title>
           <Fade top>
-            <h2 className="title">Our Vision</h2>
+            <h2 className="title">{title}</h2>
           </Fade>
         </Title>
         <VisionFlex>

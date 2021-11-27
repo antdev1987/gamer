@@ -6,6 +6,8 @@ import controller from "./img/controller.jpg"
 
 export const back = controller
 
+export const title = "our vision"
+
 export const services = [
   {
     iconTitle: <MdIcon.MdHighQuality />,
