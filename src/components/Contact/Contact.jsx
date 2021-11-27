@@ -1,4 +1,7 @@
-import Fade from "react-reveal/Fade"
+import { useRef } from 'react';
+import emailjs from 'emailjs-com';
+
+import Fade from 'react-reveal/Fade';
 
 //Component
 import NeonButton from '../../utility/NeonButton/NeonButton';
@@ -19,6 +22,28 @@ import {
 } from './ContactData';
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        'service_5mzt04n',
+        'template_ozhn1r7',
+        form.current,
+        'user_tNLjcS1hySppg1WN8702E'
+      )
+      .then(
+        () => {
+          alert("It wast sent");
+        },
+        () => {
+          alert("Something went wrong")
+        }
+      );
+    e.target.reset();
+  };
   return (
     <Section id="contactUs">
       <Title>
@@ -27,18 +52,22 @@ const Contact = () => {
         </Fade>
         <p>{subtitleSection}</p>
       </Title>
-      <form>
+      <form ref={form} onSubmit={sendEmail}>
         <div className="flex">
           <input
             type="text"
             name="name"
             placeholder={placeholderName}
+            minLength="3"
+            maxLength="50"
             required
           />
           <input
             type="text"
             name="lastName"
             placeholder={placeholderLast}
+            minLength="3"
+            maxLength="50"
             required
           />
         </div>
@@ -48,7 +77,12 @@ const Contact = () => {
           placeholder={placeholderGmail}
           required
         />
-        <textarea name="message" placeholder={placeholderMessage} />
+        <textarea
+          name="message"
+          placeholder={placeholderMessage}
+          maxLength="500"
+          required
+        />
         <Fade bottom>
           <NeonButton ty="submit">{textButton}</NeonButton>
         </Fade>

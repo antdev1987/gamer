@@ -9,6 +9,6 @@ export const placeholderLast = 'Last Name*';
 
 export const placeholderGmail = 'Your Gmail*';
 
-export const placeholderMessage = 'Message';
+export const placeholderMessage = 'Message*';
 
 export const textButton = 'Submit';
