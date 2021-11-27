@@ -11,7 +11,7 @@ export const services = [
     iconTitle: <MdIcon.MdHighQuality />,
     title: 'BEST VIDEO QUALITY',
     place: 'justify',
-    text: 'stream all your games at 4k resolution at 60 fps or 1080p 144 fps WIDE ARRAY OF VIDEO GAMES Beamy connects with any digital library so that you can play any game you own.',
+    text: 'stream all your games at 4k resolution at 60 fps or 1080p 144 fps WIDE ARRAY OF VIDEO GAMES Cloud Streaming connects with any digital library so that you can play any game you own.',
   },
   {
     title: 'SUPPORTS MULTIPLE DEVICES',
