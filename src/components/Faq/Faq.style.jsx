@@ -10,6 +10,9 @@ export const Acordion = styled.main`
 `;
 
 export const BoxAcordion = styled.div`
+  &::first-letter {
+    text-transform: capitalize;
+  }
   .title {
     display: flex;
     justify-content: space-between;
@@ -18,7 +21,6 @@ export const BoxAcordion = styled.div`
     font-size: 1.5rem;
     border-bottom: 1px solid ${(props) => props.theme.color};
     padding: 1rem 2rem;
-    text-transform: uppercase;
   }
 
   .content {
@@ -27,6 +29,7 @@ export const BoxAcordion = styled.div`
     overflow: hidden;
     font-size: 2rem;
     padding: 0rem 2rem;
+    text-transform: lowercase;
 
     @media ${device.mobileL} {
       font-size: 1.5rem;

@@ -5,7 +5,7 @@ export const back = Hero
 export const title = "comming soon"
 
 export const tagline = {
-  title: 'Beamy -',
+  title: 'Cloud Streaming -',
   text: 'paving the way for the future of cloud gaming',
 };
 
