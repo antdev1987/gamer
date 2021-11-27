@@ -3,8 +3,7 @@ export const title = "Faq's"
 export const Data = [
   {
     question: 'What is Cloud Streaming?',
-    answer: `We are a small group of experienced developers who want to help and uplift gamers who don't have the physical har
-dware to play and stream any game they want. `,
+    answer: `We are a small group of experienced developers who want to help and uplift gamers who don't have the physical hardware to play and stream any game they want. `,
   },
   {
     question: 'When will our services become available?',

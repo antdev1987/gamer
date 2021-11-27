@@ -8,7 +8,8 @@ export const Section = styled.section`
     margin-top: 2rem;
     font-size: 2rem;
     line-height: 4rem;
-    
+    position: relative;
+
     svg {
       margin: 2rem 2rem;
       margin-bottom: 0;
@@ -21,4 +22,11 @@ export const Section = styled.section`
       justify-content: center;
     }
   }
+`;
+
+export const ImageBox = styled.div`
+  height: 40rem;
+  width: 100%;
+  background: url(${(props) => props.srcHtml}) center center / cover;
+  background-attachment: fixed;
 `;

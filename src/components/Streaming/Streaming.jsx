@@ -5,8 +5,8 @@ import { Container } from '../../utility/Container/Container.style';
 import { Title } from '../../utility/Title/Title.style';
 
 //Style
-import { Section } from './Streaming.style';
-import { logo, text, title } from './StreamingData';
+import { ImageBox, Section } from './Streaming.style';
+import { logo, src, text, title } from './StreamingData';
 
 //Data
 
@@ -30,7 +30,7 @@ const Streaming = () => {
               ))}
             </Fade>
           </ul>
-          <img src="" alt="" />
+          <ImageBox srcHtml={src}/>
         </main>
       </Container>
     </Section>
