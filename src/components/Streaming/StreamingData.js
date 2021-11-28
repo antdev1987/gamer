@@ -4,7 +4,7 @@ import Fade from 'react-reveal/Fade';
 
 import { Title } from '../../utility/Title/Title.style';
 
-import img from './img/sectionStreaming.jpg';
+import img from './img/sectionStreaming.jpeg';
 import dynamicImg from "./img/dynamic.jpg"
 
 
