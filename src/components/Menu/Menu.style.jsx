@@ -15,9 +15,10 @@ export const Nav = styled.nav`
 
 export const NavGrid = styled.div`
   display: flex;
-  justify-items: center;
+  justify-content: space-between;
   align-items: center;
   gap: 3rem;
+  padding: 0 5rem;
 
   img {
     height: 2rem;

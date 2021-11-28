@@ -1,5 +1,4 @@
 //Component
-import { Container } from '../../utility/Container/Container.style';
 
 //Animation
 import Fade from 'react-reveal/Fade';
@@ -14,7 +13,6 @@ import Slidebar from '../Slidebar/Slidebar';
 const Menu = ({ click, theme }) => {
   return (
     <Nav>
-      <Container>
         <NavGrid>
           <Slidebar nav={nav} />
           <Fade top>
@@ -26,7 +24,6 @@ const Menu = ({ click, theme }) => {
             </button>
           </Fade>
         </NavGrid>
-      </Container>
     </Nav>
   );
 };
