@@ -2,11 +2,19 @@ import * as BsIcon from 'react-icons/bs';
 import * as AiIcon from 'react-icons/ai';
 import * as MdIcon from 'react-icons/md';
 
-import controller from "./img/controller.jpg"
+import controller from './img/controller.jpg';
 
-export const back = controller
+export const back = controller;
 
-export const title = "our vision"
+export const title = 'our vision';
+
+export const sub = `Our Vision at Cloud Streaming is to make the lives of small
+streamers and content creators easier. We want to help people who
+aspire to be full time streamers or content creators but do not
+have the expensive hardware for it.`;
+
+export const subtext = `With Cloud Streaming , you do not have to worry about your
+hardware.`;
 
 export const services = [
   {

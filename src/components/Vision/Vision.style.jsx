@@ -7,6 +7,13 @@ export const VisionStyled = styled.section`
   .title {
     margin: 5rem 0 0 0;
   }
+  p {
+    color: ${(props) => props.theme.color};
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    text-transform: lowercase;
+  }
+
 `;
 
 export const VisionFlex = styled.div`

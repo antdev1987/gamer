@@ -8,7 +8,7 @@ import { Title } from '../../utility/Title/Title.style';
 
 //Style
 import { ImgBox, VisionFlex, VisionStyled } from './Vision.style';
-import { back, services, title } from './VisionData';
+import { back, services, sub, subtext, title } from './VisionData';
 
 const Vision = () => {
   return (
@@ -17,6 +17,12 @@ const Vision = () => {
         <Title>
           <Fade top>
             <h2 className="title">{title}</h2>
+            <p>
+              {sub}
+            </p>
+            <p>
+              {subtext}
+            </p>
           </Fade>
         </Title>
         <VisionFlex>
@@ -35,7 +41,10 @@ const Vision = () => {
                   <p style={{ textAlign: `${item.place}` }}>{item.text}</p>
                 </Fade>
 
-                {item.icons && item.icons.map((item, idx) => <Fragment key={idx + 1}>{item.icon}</Fragment>)}
+                {item.icons &&
+                  item.icons.map((item, idx) => (
+                    <Fragment key={idx + 1}>{item.icon}</Fragment>
+                  ))}
                 {item.iconTitle}
               </div>
             ))}
