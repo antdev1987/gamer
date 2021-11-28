@@ -22,14 +22,14 @@ export const Section = styled.section`
     }
 
     .red {
-      color: ${props => props.theme.colors.primary};
+      color: ${(props) => props.theme.colors.primary};
       text-align: center;
     }
-  }
-`;
 
-export const ImageBox = styled.div`
-  height: 40rem;
-  width: 100%;
-  background: url(${(props) => props.srcHtml}) center center / cover;
+    img {
+      height: 40rem;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
 `;

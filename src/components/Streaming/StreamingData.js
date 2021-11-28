@@ -5,6 +5,8 @@ import Fade from 'react-reveal/Fade';
 import { Title } from '../../utility/Title/Title.style';
 
 import img from './img/sectionStreaming.jpg';
+import dynamicImg from "./img/dynamic.jpg"
+
 
 export const titleText = 'Streaming';
 
@@ -59,6 +61,7 @@ export const dynamic = (
         60 FPS constant at all times and have a smooth viewing of your stream.
       </p>
     </Fade>
+    <img src={dynamicImg} alt=""/>
   </>
 );
 

@@ -5,7 +5,7 @@ import { Container } from '../../utility/Container/Container.style';
 import { Title } from '../../utility/Title/Title.style';
 
 //Style
-import { ImageBox, Section } from './Streaming.style';
+import {  Section } from './Streaming.style';
 import { dynamic, logo, src, text,  titleText } from './StreamingData';
 
 //Data
@@ -28,7 +28,7 @@ const Streaming = () => {
               ))}
             </Fade>
           </ul>
-          <ImageBox srcHtml={src} />
+          <img src={src} alt=""/>
 
           <section id="dynamic">{dynamic}</section>
         </main>
