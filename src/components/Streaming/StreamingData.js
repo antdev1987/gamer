@@ -2,7 +2,7 @@ import * as AiIcon from 'react-icons/ai';
 import * as BsIcon from 'react-icons/bs';
 import Fade from 'react-reveal/Fade';
 
-import title, { Title } from "../../utility/Title/Title.style"
+import { Title } from '../../utility/Title/Title.style';
 
 import img from './img/sectionStreaming.jpg';
 
@@ -38,7 +38,9 @@ export const dynamic = (
     <br />
     <Title>
       <Fade top>
-        <h2 style={{marginTop: "3rem", marginBottom: "2rem"}}>DYNAMIC RESOLUTION</h2>
+        <h2 style={{ marginTop: '3rem', marginBottom: '2rem' }}>
+          DYNAMIC RESOLUTION
+        </h2>
       </Fade>
     </Title>
     <Fade top>
