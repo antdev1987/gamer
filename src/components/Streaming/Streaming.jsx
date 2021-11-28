@@ -1,4 +1,4 @@
-import Fade from "react-reveal/Fade"
+import Fade from 'react-reveal/Fade';
 
 //Components
 import { Container } from '../../utility/Container/Container.style';
@@ -6,7 +6,7 @@ import { Title } from '../../utility/Title/Title.style';
 
 //Style
 import { ImageBox, Section } from './Streaming.style';
-import { dynamic, logo, src, text, title } from './StreamingData';
+import { dynamic, logo, src, text,  titleText } from './StreamingData';
 
 //Data
 
@@ -15,15 +15,12 @@ const Streaming = () => {
     <Section id="streaming">
       <Title>
         <Fade top>
-          <h2>{title}</h2>
+          <h2>{titleText}</h2>
         </Fade>
       </Title>
       <Container>
         <main>
-          <Fade top>
-            {text}
-          </Fade>
-          {dynamic}
+          <Fade top>{text}</Fade>
           <ul>
             <Fade top>
               {logo.map((item, idx) => (
@@ -31,7 +28,9 @@ const Streaming = () => {
               ))}
             </Fade>
           </ul>
-          <ImageBox srcHtml={src}/>
+          <ImageBox srcHtml={src} />
+
+          <section id="dynamic">{dynamic}</section>
         </main>
       </Container>
     </Section>

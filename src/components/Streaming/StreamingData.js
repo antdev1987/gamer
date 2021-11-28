@@ -2,9 +2,11 @@ import * as AiIcon from 'react-icons/ai';
 import * as BsIcon from 'react-icons/bs';
 import Fade from 'react-reveal/Fade';
 
+import title, { Title } from "../../utility/Title/Title.style"
+
 import img from './img/sectionStreaming.jpg';
 
-export const title = 'Streaming';
+export const titleText = 'Streaming';
 
 export const text = (
   <>
@@ -34,9 +36,11 @@ export const text = (
 export const dynamic = (
   <>
     <br />
-    <Fade top>
-      <h3>DYNAMIC RESOLUTION:</h3>
-    </Fade>
+    <Title>
+      <Fade top>
+        <h2 style={{marginTop: "3rem", marginBottom: "2rem"}}>DYNAMIC RESOLUTION</h2>
+      </Fade>
+    </Title>
     <Fade top>
       <p>
         If you dont know which resolution is perfect for your internet speed ,

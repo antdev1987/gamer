@@ -11,6 +11,7 @@ export const nav = [
   { text: 'home', href: '#home' },
   { text: 'vision', href: '#vision' },
   { text: 'Streaming', href: '#streaming' },
+  { text: 'Dynamic', href: '#dynamic' },
   { text: 'faq', href: '#faq' },
   { text: 'contact us', href: '#contactUs' },
 ];

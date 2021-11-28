@@ -20,6 +20,11 @@ export const Section = styled.section`
       display: flex;
       justify-content: center;
     }
+
+    .red {
+      color: ${props => props.theme.colors.primary};
+      text-align: center;
+    }
   }
 `;
 
