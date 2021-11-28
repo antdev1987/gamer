@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import { device } from '../../styles/Responsive';
+
 export const Section = styled.section`
   margin-top: 5rem;
 
@@ -30,6 +32,10 @@ export const Section = styled.section`
       height: 40rem;
       width: 100%;
       object-fit: cover;
+
+      @media ${device.tablet}{
+        height: 100%;
+      }
     }
   }
 `;
