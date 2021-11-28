@@ -11,7 +11,7 @@ export const VisionStyled = styled.section`
     color: ${(props) => props.theme.color};
     font-size: 1.5rem;
     margin-top: 1rem;
-    text-transform: lowercase;
+    text-transform: initial;
   }
 
 `;
