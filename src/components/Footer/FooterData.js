@@ -1,1 +1,1 @@
-export const Data = "2021 Cloud Streaming | In Cloud We Trust"
+export const Data = "2021 Cloud Streaming"

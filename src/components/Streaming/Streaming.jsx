@@ -6,7 +6,7 @@ import { Title } from '../../utility/Title/Title.style';
 
 //Style
 import { ImageBox, Section } from './Streaming.style';
-import { logo, src, text, title } from './StreamingData';
+import { dynamic, logo, src, text, title } from './StreamingData';
 
 //Data
 
@@ -21,8 +21,9 @@ const Streaming = () => {
       <Container>
         <main>
           <Fade top>
-            <h3>{text}</h3>
+            {text}
           </Fade>
+          {dynamic}
           <ul>
             <Fade top>
               {logo.map((item, idx) => (
