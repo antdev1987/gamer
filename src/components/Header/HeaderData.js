@@ -2,7 +2,7 @@ import Hero from "./img/hero.jpg"
 
 export const back = Hero
 
-export const title = "comming soon"
+export const title = "coming soon"
 
 export const tagline = {
   title: 'Cloud Streaming -',
