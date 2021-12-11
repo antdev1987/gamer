@@ -32,6 +32,7 @@ export const NavGrid = styled.div`
       text-decoration: none;
       color: ${(props) => props.theme.color};
       text-transform: capitalize;
+      font-size: 1.8rem
     }
   }
 
