@@ -15,10 +15,10 @@ export const Nav = styled.nav`
 
 export const NavGrid = styled.div`
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 3rem;
+  gap: 10rem;
   padding: 0 5rem;
+  display: flex;
 
   img {
     height: 2rem;
@@ -28,7 +28,6 @@ export const NavGrid = styled.div`
     display: flex;
     gap: 5rem;
     list-style: none;
-
     a {
       text-decoration: none;
       color: ${(props) => props.theme.color};
@@ -58,7 +57,8 @@ export const NavGrid = styled.div`
     font-size: 2.5rem;
     border: none;
     background: ${(props) => props.theme.color};
-    color: ${(props) => props.theme.bgColor};
+    color: ${(props) => props.theme.bgColor}; 
+
 
     svg {
       height: 2rem;
