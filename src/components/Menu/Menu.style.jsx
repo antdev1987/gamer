@@ -4,7 +4,7 @@ export const Nav = styled.nav`
   font-size: 2rem;
   position: sticky;
   top: 0;
-  background: ${props => props.theme.bgColor};
+  background: ${(props) => props.theme.bgColor};
   z-index: 10;
   height: 6rem;
   display: flex;
@@ -24,16 +24,28 @@ export const NavGrid = styled.div`
     height: 2rem;
   }
 
+  ul {
+    display: flex;
+    gap: 5rem;
+    list-style: none;
+
+    a {
+      text-decoration: none;
+      color: ${(props) => props.theme.color};
+      text-transform: capitalize;
+    }
+  }
+
   .nav-menu {
-    background: ${props => props.theme.bgColor};
+    background: ${(props) => props.theme.bgColor};
   }
 
   .menu-bars svg {
-    color: ${props => props.theme.color};
+    color: ${(props) => props.theme.color};
   }
 
   .nav-text a {
-    color: ${props => props.theme.color};
+    color: ${(props) => props.theme.color};
   }
 
   button {
