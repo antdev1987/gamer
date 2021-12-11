@@ -13,7 +13,6 @@ export const VisionStyled = styled.section`
     margin-top: 1rem;
     text-transform: initial;
   }
-
 `;
 
 export const VisionFlex = styled.div`
@@ -22,7 +21,6 @@ export const VisionFlex = styled.div`
   position: relative;
   height: 185rem;
   gap: 2rem;
-  margin-top: -10%;
 
   @media ${device.mobileL} {
     flex-direction: row;
@@ -32,19 +30,25 @@ export const VisionFlex = styled.div`
   .flex {
     flex: 1;
     align-self: center;
-    color: ${props => props.theme.colors.white};
+    color: ${(props) => props.theme.colors.white};
 
+    @media ${device.mobileL} {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: space-between;
+    }
 
-    @media ${device.mobileL}{
-      color: ${props => props.theme.color};
+    @media ${device.mobileL} {
+      color: ${(props) => props.theme.color};
     }
     div {
       margin: 8rem 0;
       text-align: center;
       padding: 1rem 5rem;
 
-      @media ${device.mobileL}{
-      padding: 0 5rem;
+      @media ${device.mobileL} {
+        padding: 0 5rem;
       }
 
       section {
@@ -82,6 +86,7 @@ export const ImgBox = styled.div`
   margin: 0 auto;
   height: 100vh;
   margin: 0 auto;
+  margin-top: -10%;
   top: 0;
   flex: 1;
   position: sticky;
@@ -101,4 +106,3 @@ export const ImgBox = styled.div`
     }
   }
 `;
-
