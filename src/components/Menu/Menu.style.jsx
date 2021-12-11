@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { device } from '../../styles/Responsive';
 
 export const Nav = styled.nav`
   font-size: 2rem;
@@ -6,22 +7,42 @@ export const Nav = styled.nav`
   top: 0;
   background: ${(props) => props.theme.bgColor};
   z-index: 10;
-  height: 6rem;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   transition: background 1s ease-in-out;
+  overflow:hidden;
 `;
 
 export const NavGrid = styled.div`
+  padding: 2rem 0;
   display: flex;
   align-items: center;
-  gap: 10rem;
-  padding: 0 5rem;
-  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  .desktop {
+    display: none;
+  }
+
+  @media ${device.laptop} {
+    justify-content: center;
+    flex-direction: row;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+    gap: 5rem;
+
+    .phone {
+      display: none !important;
+    }
+
+    .desktop {
+      display: block;
+    }
+  }
 
   img {
-    height: 2rem;
+    height: 1rem;
+    @media ${device.tablet} {
+      height: 2rem;
+    }
   }
 
   ul {
@@ -32,7 +53,8 @@ export const NavGrid = styled.div`
       text-decoration: none;
       color: ${(props) => props.theme.color};
       text-transform: capitalize;
-      font-size: 1.8rem
+      font-size: 1.8rem;
+      word-break: keep-all;
     }
   }
 
@@ -58,8 +80,7 @@ export const NavGrid = styled.div`
     font-size: 2.5rem;
     border: none;
     background: ${(props) => props.theme.color};
-    color: ${(props) => props.theme.bgColor}; 
-
+    color: ${(props) => props.theme.bgColor};
 
     svg {
       height: 2rem;
