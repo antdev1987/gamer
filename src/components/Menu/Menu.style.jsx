@@ -8,7 +8,7 @@ export const Nav = styled.nav`
   background: ${(props) => props.theme.bgColor};
   z-index: 10;
   transition: background 1s ease-in-out;
-  overflow:hidden;
+  overflow: hidden;
 `;
 
 export const NavGrid = styled.div`
@@ -25,30 +25,17 @@ export const NavGrid = styled.div`
   .phone {
     width: 100%;
     display: flex;
-    justify-content: space-between;
     padding: 0 2rem;
+    justify-content: space-between;
 
     button {
       justify-self: center;
     }
-  }
 
-  @media ${device.laptop} {
-    justify-content: center;
-    flex-direction: row;
-    padding: 2rem 1rem;
-    margin: 0 auto;
-    gap: 5rem;
-
-    .phone {
-      display: none !important;
-    }
-
-    .desktop {
-      display: block;
+    @media ${device.mobileL} {
+      justify-content: center;
     }
   }
-
   img {
     height: 1rem;
     @media ${device.tablet} {
@@ -58,7 +45,7 @@ export const NavGrid = styled.div`
 
   ul {
     display: flex;
-    gap: 5rem;
+    gap: 2rem;
     list-style: none;
     a {
       text-decoration: none;
@@ -95,6 +82,26 @@ export const NavGrid = styled.div`
 
     svg {
       height: 2rem;
+    }
+  }
+
+  @media ${device.laptop} {
+    justify-content: center;
+    flex-direction: row;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+    gap: 5rem;
+
+    ul {
+      gap: 5rem;
+    }
+
+    .phone {
+      display: none !important;
+    }
+
+    .desktop {
+      display: block;
     }
   }
 `;
