@@ -13,7 +13,7 @@ const Menu = ({ click, theme }) => {
     <Nav>
       <NavGrid>
         <Fade top>
-          <img src={logo} alt="" className='desktop'/>
+          <img src={logo} alt="" className="desktop" />
         </Fade>
         <div
           className="phone"
@@ -24,14 +24,14 @@ const Menu = ({ click, theme }) => {
             marginBottom: '2rem',
           }}
         >
-          <Fade top>
+          <div className="box--1">
             <img src={logo} alt="" style={{ height: '2rem' }} />
-          </Fade>
-          <Fade right>
+          </div>
+          <div className="box--2">
             <button onClick={() => click()}>
               {theme === 'dark' ? icons.sun : icons.moon}
             </button>
-          </Fade>
+          </div>
         </div>
         <ul>
           {nav.map(({ text, href }, idx) => (
@@ -41,7 +41,7 @@ const Menu = ({ click, theme }) => {
           ))}
         </ul>
         <Fade right>
-          <button onClick={() => click()} className='desktop'>
+          <button onClick={() => click()} className="desktop">
             {theme === 'dark' ? icons.sun : icons.moon}
           </button>
         </Fade>

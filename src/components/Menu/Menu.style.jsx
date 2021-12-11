@@ -26,14 +26,17 @@ export const NavGrid = styled.div`
     width: 100%;
     display: flex;
     padding: 0 2rem;
-    justify-content: space-between;
+    justify-content: center;
+    position:relative;
 
-    button {
-      justify-self: center;
-    }
-
-    @media ${device.mobileL} {
-      justify-content: center;
+    .box--2 {
+      
+      button {
+        position: absolute;
+        right: 2rem;
+        bottom: .10rem;
+        justify-self: flex-end;
+      }
     }
   }
   img {
