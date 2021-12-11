@@ -22,6 +22,17 @@ export const NavGrid = styled.div`
     display: none;
   }
 
+  .phone {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+
+    button {
+      justify-self: center;
+    }
+  }
+
   @media ${device.laptop} {
     justify-content: center;
     flex-direction: row;
